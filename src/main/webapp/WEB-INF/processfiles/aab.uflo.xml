@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><uflo-process name="aa"><start name="开始1" x="290" y="38" width="40" height="70" ><sequence-flow g="" type="line" to="结束流程1"></sequence-flow></start><end name="结束流程1" x="281" y="194" width="40" height="70"  terminate="true"></end></uflo-process>
