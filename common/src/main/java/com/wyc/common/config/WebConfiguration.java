@@ -25,14 +25,14 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(marshallingHttpMessageConverter());
+        //converters.add(marshallingHttpMessageConverter());
     }
 
     public MarshallingHttpMessageConverter marshallingHttpMessageConverter(){
         MarshallingHttpMessageConverter marshallingHttpMessageConverter = new MarshallingHttpMessageConverter();
         List<MediaType> mediaTypes = new ArrayList<MediaType>();
-        mediaTypes.add(MediaType.TEXT_XML);
-        mediaTypes.add(MediaType.APPLICATION_XML);
+        mediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
+        //mediaTypes.add(MediaType.APPLICATION_XML);
         XStreamMarshaller xStreamMarshaller=new XStreamMarshaller();
         marshallingHttpMessageConverter.setSupportedMediaTypes(mediaTypes);
         marshallingHttpMessageConverter.setMarshaller(xStreamMarshaller);

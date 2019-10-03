@@ -11,7 +11,7 @@
 //@Aspect
 //@Component
 //public class ManagerInterceptConfig {
-////    @Around(value="execution (* com.zjmxdz.dao.*.*(..))")
+//    @Around(value="execution (* com.zjmxdz.dao.*.*(..))")
 //    public Object userCenterAction(ProceedingJoinPoint proceedingJoinPoint)throws Throwable{
 //       return null;
 //    }
